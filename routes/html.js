@@ -1,18 +1,28 @@
-const router = require("express").Router();
-const mongoose = require("mongoose");
+const app = require("express").Router();
+const path = require("path");
+// const mongoose = require("mongoose");
+// const app = require("./api-routes");
 
 
 // Missing route direction //
-router.get("/public/exercise.html", (req, res) => {
+app.get("/exercise.html", (req, res) => {
+    res.sendFile(path.join(__dirname, "/public/exercise.html"));
 
 });
 
-router.get("/public/index.html", (req, res) => {
+// app.get("/public/index.html", (req, res) => {
+//     res.sendFile(path.join(__dirname, "/public/index.html"));
 
-});
+// });
 
-router.get("/public/stats.html", (req, res) => {
+// app.get("/public/stats.html", (req, res) => {
+//     res.sendFile(path.join(__dirname, "/public/stats.html"));
 
-});
+// });
 
-module.exports = router;
+// app.get("/public/exercise.html", (req, res) => {
+//     res.sendFile(path.join(__dirname, "/public/exercise.html"));
+
+// });
+
+module.exports = app;

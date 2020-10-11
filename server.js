@@ -15,16 +15,22 @@ app.use(express.json());
 // Use PUBLIC Folder
 app.use(express.static("public"));
 
-// ** Confirm Fucntionality Database Name** \\
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/${PORT}", { 
-    useNewUrlParser: true, 
-    userFindAndModify: false 
-});
+// Mongoose Connection\\
+mongoose.connect(
+    process.env.MONGODB_URI || "mongodb://localhost/blooming-taiga-25164", 
+    { 
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+    useFindAndModify: false
+    }
+);
 
 // ROUTES ?? //
-app.use(require("UNKOWN ROUTE,js")); 
+app.use(require("./Develop/routes/apiRoutes.js")); 
+app.use(require("./Develop/routes/pages.js"));
 
 // Port Listener \\
 app.listen(PORT, () => {
-    console.log('App running on PORT ${PORT}!');
+    console.log('App running on PORT ${???}');
 });

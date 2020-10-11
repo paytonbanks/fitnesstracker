@@ -5,20 +5,20 @@ const path = require("path");
 
 
 // Missing route direction //
-app.get("/exercise.html", (req, res) => {
-    res.sendFile(path.join(__dirname, "/public/exercise.html"));
+app.get("/", (req, res) => {
+    res.sendFile(path.join(__dirname, "../public/index.html"));
 
 });
 
-// app.get("/public/index.html", (req, res) => {
-//     res.sendFile(path.join(__dirname, "/public/index.html"));
+app.get("/exercise.html", (req, res) => {
+    res.sendFile(path.join(__dirname, "../public/exercise.html"));
 
-// });
+});
 
-// app.get("/public/stats.html", (req, res) => {
-//     res.sendFile(path.join(__dirname, "/public/stats.html"));
+app.get("/stats.html", (req, res) => {
+    res.sendFile(path.join(__dirname, "../public/stats.html"));
 
-// });
+});
 
 // app.get("/public/exercise.html", (req, res) => {
 //     res.sendFile(path.join(__dirname, "/public/exercise.html"));

@@ -35,13 +35,14 @@ app.put("/api/workouts/:id", ({ body, params }, res) => {
     });
 });
 
-app.get("/api/workout/range", (req, res) => {
+app.get("/api/workouts/range", (req, res) => {
     Workout.find({})
-        .limit(10).then((dbWorkout) => {
+        .limit(10)
+        .then((dbWorkout) => {
             res.json(dbWorkout);
         })
         .catch((err) => {
-            res.json(err);
+            res.status(400).json(err);
         });
 });
 

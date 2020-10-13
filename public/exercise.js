@@ -28,7 +28,7 @@ async function initExercise() {
     location.search = "?id=" + workout._id;
   }
 
-}
+};
 
 initExercise();
 
@@ -47,7 +47,7 @@ function handleWorkoutTypeChange(event) {
   }
 
   validateInputs();
-}
+};
 
 function validateInputs() {
   let isValid = true;
@@ -93,7 +93,7 @@ function validateInputs() {
     completeButton.setAttribute("disabled", true);
     addButton.setAttribute("disabled", true);
   }
-}
+};
 
 async function handleFormSubmit(event) {
   event.preventDefault();

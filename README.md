@@ -24,4 +24,4 @@ Fitness Tracker is a web based application that allows the user to monitor and m
 
 ## Client Project Site
 *link:*
-[Fitness Tracker](https://shielded-refuge-45840.herokuapp.com/)
+[Fitness Tracker](https://obscure-beach-49755.herokuapp.com/)

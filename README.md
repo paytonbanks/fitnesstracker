@@ -2,7 +2,15 @@
 
 ## Description
 Fitness Tracker is a web based application that allows the user to monitor and measure their fitnss goals and keep a digital record of their progress. The user will be able to track the name, type, weight, sets, reps, and duration of each exercise, and to log the distance for cardio exercises. Fitness Tracker is an easy The applicatons core fucntioning is backed with Mongo database and routes supported by Express. <br></br>
-![demo](demo.gif)
+
+## Video
+<span style="display:block;text-align:center;width:100%">![Demo Video](demo.gif)</span>
+
+## Screen Shots
+| | |
+|:-------------------------:|:-------------------------:|
+|![Workout-Tracker-Demo](shot1.png) screen shot 1| ![Workout-Tracker-Demo](shot2.png) screen shot 2|
+|![Workout-Tracker-Demo](shot3.png) screen shot 3| ![Workout-Tracker-Demo](shot4.png)screen shot 4|
 
 ## Technology
 * [MongoBD](https://www.mongodb.com/)

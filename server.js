@@ -9,7 +9,6 @@ app.use(logger("dev"));
 
 app.use(express.urlencoded({ extended: true })); 
 app.use(express.json());
-app.use(compression());
 app.use(express.static("public"));
 
 
